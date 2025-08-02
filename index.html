@@ -1,625 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Natasha Hinga- Web Developer from Kenya</title>
+    <!-- ✅ SEO Meta Tags -->
+    <title>Natasha | Web Developer Portfolio</title>
+    <meta
+      name="description"
+      content="I'm Natasha, a passionate web developer and tech enthusiast, building creative and responsive web experiences."
+    />
+    <meta
+      name="keywords"
+      content="Natasha, Web Developer, Portfolio, HTML CSS Developer, Tech Enthusiast, Kenya Developer"
+    />
+    <meta name="author" content="Natasha Wambui Hinga" />
 
-  <!-- 
-    - favicon
-  -->
-  <link rel="shortcut icon" href="assets/images/mylogo.png" type="image/svg+xml">
+    <!-- ✅ Open Graph Meta Tags-->
+    <meta property="og:title" content="Natasha | Web Developer Portfolio" />
+    <meta
+      property="og:description"
+      content="Fueled by curiosity and code, I build responsive, clean websites."
+    />
+    <meta
+      property="og:image"
+      content="https://slate299.github.io/myportfolio/assets/images/profile.jpg"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://slate299.github.io/myportfolio/" />
 
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- ✅ Favicon (Optional) -->
+    <link rel="icon" href="assets/images/faviconlogo.png" type="image/x-icon" />
 
-  <!-- 
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600&display=swap"
-    rel="stylesheet">
-</head>
+    <!-- ✅ Link to CSS -->
+    <link rel="stylesheet" href="assets/css/portfolio.css" />
+  </head>
 
-<body id="top">
+  <body id="top">
+    <!-- ✅ Header & Navigation -->
+    <header>
+      <div class="container">
+        <h1 class="logo">Tasha</h1>
 
-  <!-- 
-    - #HEADER
-  -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
 
-  <header class="header" data-header>
-    <div class="container">
+        <label for="menu-toggle" class="menu-icon"></label>
 
-      <a href="#">
-        <h1 class="logo">Natasha Hinga</h1>
-      </a>
+        <!-- Nav links -->
+        <nav class="navbar">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#interests">Interests</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-      <button class="nav-toggle-btn" aria-label="Toggle Menu" data-nav-toggle-btn>
-        <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
-        <ion-icon name="close-outline" class="close-icon"></ion-icon>
-      </button>
-
-      <nav class="navbar container">
-        <ul class="navbar-list">
-
-          <li>
-            <a href="#home" class="navbar-link" data-nav-link>Home</a>
-          </li>
-
-          <li>
-            <a href="#about" class="navbar-link" data-nav-link>About</a>
-          </li>
-
-          <li>
-            <a href="#portfolio" class="navbar-link" data-nav-link>Portfolio</a>
-          </li>
-
-          <li>
-            <a href="#skills" class="navbar-link" data-nav-link>Skills</a>
-          </li>
-
-          <li>
-            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
-          </li>
-
-<!--          <li>-->
-<!--            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>-->
-<!--          </li>-->
-
-<!--          <li>-->
-<!--            <a href="#" class="btn btn-primary">Download CV</a>-->
-<!--          </li>-->
-
-        </ul>
-      </nav>
-
-    </div>
-  </header>
-
-
-
-
-
-  <main>
-    <article>
-
-      <!-- 
-        - #HERO
-      -->
-
-      <section class="hero" id="home">
-        <div class="container">
-
-          <div class="hero-banner">
-
-            <img src="./assets/images/image_zVvOaBT7_1729321786947_512.jpg" width="800" height="864" loading="lazy" alt="Hinga's Photo"
-              class="img-cover">
-
-<!--            <div class="elem elem-1">-->
-<!--              <p class="elem-title">12</p>-->
-
-<!--              <p class="elem-text">Years of Success</p>-->
-<!--            </div>-->
-
-<!--            <div class="elem elem-2">-->
-<!--              <p class="elem-title">800+</p>-->
-
-<!--              <p class="elem-text">Projects Completed</p>-->
-<!--            </div>-->
-
-            <div class="elem elem-3">
-              <ion-icon name="trophy"></ion-icon>
-            </div>
-
-<!--            <img src="./assets/images/mylogo.png" width="169" height="172" alt="I'm developer from Kenya"-->
-<!--              class="rotate-img">-->
-
-          </div>
-
-          <div class="hero-content">
-
-            <h2 class="hero-title">
-              <span>Hello I'm</span>
-              <strong>Natasha Hinga</strong> Web Developer from Kenya
-            </h2>
-
-            <p class="hero-text">
-              Innovative Web Development fueled by Curiosity and Code
+    <!-- ✅ Hero Section -->
+    <section class="hero">
+      <div class="overlay">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>I'm <span class="highlight">Natasha</span></h1>
+            <p>
+              A passionate web developer and tech enthusiast,<br />
+              fueled by <span class="highlight">curiosity</span> and
+              <span class="highlight">code</span>.
             </p>
-
-            <div class="btn-group">
-              <a href="#contact" class="btn btn-primary blue">Get a Quote</a>
-
-              <a href="#about" class="btn">About Me</a>
-            </div>
-
           </div>
-
+          <div class="hero-image">
+            <img src="assets/images/profile.jpg" alt="Tasha's photo" />
+            <a
+              href="assets/docs/Natasha_Hinga_Resume.pdf"
+              class="btn resume-btn"
+              download
+            >
+              📄 Download Resume
+            </a>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-
-
-
-
-      <!-- 
-        - #ABOUT
-      -->
-
-      <section class="section about" id="about">
-        <div class="container">
-
-          <figure class="about-banner">
-
-            <img src="./assets/images/tech.jpg" width="800" height="652" loading="lazy" alt="Ethan's Photo"
-              class="img-cover">
-
-            <img src="./assets/images/githubporfolioavatar.jpg" width="800" height="717" loading="lazy" alt="Ethan's Photo"
-              class="abs-img">
-
-            <div class="abs-icon abs-icon-1">
-              <ion-icon name="logo-css3"></ion-icon>
-            </div>
-
-            <div class="abs-icon abs-icon-2">
-              <ion-icon name="logo-javascript"></ion-icon>
-            </div>
-
-            <div class="abs-icon abs-icon-3">
-              <ion-icon name="logo-angular"></ion-icon>
-            </div>
-
-          </figure>
-
-          <div class="about-content">
-
-            <p class="section-subtitle">I'm a Developer</p>
-
-            <h2 class="h2 section-title">Driven by Curiosity and Code</h2>
-
-            <p class="section-text">
-              A passionate Web Developer from Kenya. I specialize in front-end and back-end development, currently honing my skills in HTML, CSS, and C. I am dedicated to creating user-friendly, efficient, and visually appealing web applications. With a strong foundation in mathematics and computer science, I bring a problem-solving mindset and attention to detail to every project I work on.
-
-            </p>
-
-            <p class="section-text">
-              I’m excited to continue growing as a developer and to contribute to innovative tech solutions.
-            </p>
-
-            <a href="#portfolio" class="btn btn-primary blue">View Portfolio</a>
-
-          </div>
-
+    <!-- ✅ About Section -->
+    <section class="about" id="about">
+      <div class="about-container">
+        <div class="about-image">
+          <img src="assets/images/githubporfolioavatar.jpg" alt="My photo" />
         </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #PORTFOLIO
-      -->
-
-      <section class="section portfolio" id="portfolio">
-        <div class="container">
-
-          <p class="section-subtitle">Portfolio</p>
-
-          <h2 class="h2 section-title">My Amazing Works</h2>
-
-          <p class="section-text">
-            Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehen derit in voluptate
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>
+            I’m Natasha, a web developer and computer science student passionate
+            about turning ideas into beautiful, functional websites. My code is
+            clean, my curiosity endless.
           </p>
-
-          <ul class="portfolio-list">
-
+          <ul class="highlights">
+            <li><strong>🎯 Focus:</strong> Frontend Web Development</li>
+            <li><strong>📚 Learning:</strong> React, Python</li>
             <li>
-              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-1.jpg')">
-                <div class="card-content">
-
-                  <p class="card-subtitle">Youtube</p>
-
-                  <h3 class="h3 card-title">Project 1</h3>
-
-                  <span class="btn-link">
-                    <span>View Project</span>
-
-                    <ion-icon name="arrow-forward"></ion-icon>
-                  </span>
-
-                </div>
-              </a>
+              <strong>💡 Passion:</strong> Clean UI, Accessibility,
+              Problem-Solving
             </li>
-
-            <li>
-              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-2.jpg')">
-                <div class="card-content">
-
-                  <p class="card-subtitle">Vimeo</p>
-
-                  <h3 class="h3 card-title">Project 2</h3>
-
-                  <span class="btn-link">
-                    <span>View Project</span>
-
-                    <ion-icon name="arrow-forward"></ion-icon>
-                  </span>
-
-                </div>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-3.jpg')">
-                <div class="card-content">
-
-                  <p class="card-subtitle">Soundcloud</p>
-
-                  <h3 class="h3 card-title">Project 3</h3>
-
-                  <span class="btn-link">
-                    <span>View Project</span>
-
-                    <ion-icon name="arrow-forward"></ion-icon>
-                  </span>
-
-                </div>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-4.jpg')">
-                <div class="card-content">
-
-                  <p class="card-subtitle">Details</p>
-
-                  <h3 class="h3 card-title">Project 4</h3>
-
-                  <span class="btn-link">
-                    <span>View Project</span>
-
-                    <ion-icon name="arrow-forward"></ion-icon>
-                  </span>
-
-                </div>
-              </a>
-            </li>
-
           </ul>
-
         </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #SKILLS
-      -->
-
-      <section class="section skills" id="skills">
-        <div class="container">
-
-          <p class="section-subtitle">My Skills</p>
-
-          <h2 class="h2 section-title">I Develop Skills Regularly</h2>
-
-          <p class="section-text">
-            Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehen derit in voluptate
-          </p>
-
-          <ul class="skills-list">
-
-            <li class="skills-item">
-              <div class="wrapper" style="width: 95%">
-                <h3 class=" skills-title">HTML</h3>
-
-                <data class="skills-data" value="40">40%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 95%"></div>
-              </div>
-            </li>
-
-<!--            <li class="skills-item">-->
-<!--              <div class="wrapper" style="width: 75%">-->
-<!--                <h3 class="skills-title">React</h3>-->
-
-<!--                <data class="skills-data" value="75">75%</data>-->
-<!--              </div>-->
-
-<!--              <div class="skills-progress-box">-->
-<!--                <div class="skills-progress" style="width: 75%"></div>-->
-<!--              </div>-->
-<!--            </li>-->
-
-            <li class="skills-item">
-              <div class="wrapper" style="width: 90%">
-                <h3 class="skills-title">CSS</h3>
-
-                <data class="skills-data" value="30">30%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 90%"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="wrapper" style="width: 70%">
-                <h3 class="skills-title">JavaScript</h3>
-
-                <data class="skills-data" value="5">5%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 70%"></div>
-              </div>
-            </li>
-
-<!--            <li class="skills-item">-->
-<!--              <div class="wrapper" style="width: 80%">-->
-<!--                <h3 class="skills-title">PHP</h3>-->
-
-<!--                <data class="skills-data" value="80">80%</data>-->
-<!--              </div>-->
-
-<!--              <div class="skills-progress-box">-->
-<!--                <div class="skills-progress" style="width: 80%"></div>-->
-<!--              </div>-->
-<!--            </li>-->
-
-            <li class="skills-item">
-              <div class="wrapper" style="width: 75%">
-                <h3 class="skills-title">C</h3>
-
-                <data class="skills-data" value="20">20%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 75%"></div>
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #CONTACT
-      -->
-
-      <section class="section contact" id="contact">
-        <div class="container">
-
-          <div class="contact-card">
-
-            <p class="card-subtitle">Don't be shy</p>
-
-            <h2 class="h2 section-title">Drop Me a Line</h2>
-
-            <div class="wrapper">
-
-              <form action="" class="contact-form">
-
-                <input type="text" name="name" placeholder="Name" required class="contact-input">
-
-                <input type="email" name="email" placeholder="Email" required class="contact-input">
-
-                <textarea name="message" placeholder="Message" required class="contact-input"></textarea>
-
-                <button type="submit" class="btn-submit">Submit Message</button>
-
-              </form>
-
-              <ul class="contact-list">
-
-                <li class="contact-item">
-
-                  <div class="contact-icon">
-                    <ion-icon name="location"></ion-icon>
-                  </div>
-
-                  <div>
-                    <h3 class="contact-item-title">Address</h3>
-
-                    <address class="contact-item-link">
-                      2046-20300, Nyahururu, Kenya,
-                    </address>
-                  </div>
-
-                </li>
-
-                <li class="contact-item">
-
-                  <div class="contact-icon">
-                    <ion-icon name="mail"></ion-icon>
-                  </div>
-
-                  <div>
-                    <h3 class="contact-item-title">Email</h3>
-
-                    <a href="mailto:natashahinga58@gmail.com" class="contact-item-link">natashahinga58@gmail.com</a>
-                  </div>
-
-                </li>
-
-                <li class="contact-item">
-
-                  <div class="contact-icon">
-                    <ion-icon name="call"></ion-icon>
-                  </div>
-
-                  <div>
-                    <h3 class="contact-item-title">Phone</h3>
-
-                    <a href="tel:+254799862291" class="contact-item-link">+254 799 862 291</a>
-                  </div>
-
-                </li>
-
-              </ul>
-
-            </div>
-
+      </div>
+    </section>
+
+    <!-- ✅ Skills Section -->
+    <section id="skills" class="skills-section">
+      <h2>My Skills</h2>
+
+      <div class="skill">
+        <p>HTML</p>
+        <div class="progress-bar"><div class="progress html">90%</div></div>
+      </div>
+
+      <div class="skill">
+        <p>CSS</p>
+        <div class="progress-bar"><div class="progress css">85%</div></div>
+      </div>
+
+      <div class="skill">
+        <p>Python</p>
+        <div class="progress-bar"><div class="progress python">70%</div></div>
+      </div>
+
+      <div class="skill">
+        <p>Java</p>
+        <div class="progress-bar"><div class="progress java">70%</div></div>
+      </div>
+
+      <div class="skill">
+        <p>django</p>
+        <div class="progress-bar"><div class="progress django">70%</div></div>
+      </div>
+
+      <div class="skill">
+        <p>C</p>
+        <div class="progress-bar"><div class="progress c">70%</div></div>
+      </div>
+
+      <div class="skill">
+        <p>React</p>
+        <div class="progress-bar"><div class="progress react">30%</div></div>
+      </div>
+    </section>
+
+    <!-- ✅ Projects Section -->
+    <section id="projects" class="projects-section">
+      <h2 class="section-title">My Works in Progress</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="assets/images/agri-match.jpg" alt="Agri-Match" />
+          <div class="project-info">
+            <h3>Agri-Match</h3>
+            <p>
+              A rental marketplace for agricultural equipment and services,
+              supporting SDG 2: Zero Hunger.
+            </p>
+            <a
+              href="https://github.com/slate299/agri_match"
+              target="_blank"
+              class="btn"
+              >GitHub Repo</a
+            >
           </div>
-
         </div>
-      </section>
 
+        <div class="project-card">
+          <img src="assets/images/todo-app.jpg" alt="To-Do App" />
+          <div class="project-info">
+            <h3>To-Do Task Manager</h3>
+            <p>
+              A productivity-focused app to manage and track tasks efficiently.
+            </p>
+            <a
+              href="https://github.com/slate299/React2-Taskmanager"
+              target="_blank"
+              class="btn"
+              >GitHub Repo</a
+            >
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="assets/images/photofolio.jpg" alt="PhotoFolio" />
+          <div class="project-info">
+            <h3>PhotoFolio</h3>
+            <p>
+              A photography portfolio website, designed for wildlife and nature
+              photography presentation.
+            </p>
+            <a
+              href="https://github.com/slate299/photofolio"
+              target="_blank"
+              class="btn"
+              >GitHub Repo</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- ✅ Education Section -->
+    <section class="education-section" id="education">
+      <h2 class="section-title">Education</h2>
+      <div class="education-stack">
+        <div class="education-card">
+          <h3>
+            Jomo Kenyatta University of Agriculture and Technology (JKUAT)
+          </h3>
+          <p>
+            BSc. Mathematics and Computer Science<br /><span class="edu-status"
+              >Currently Studying</span
+            >
+          </p>
+        </div>
 
+        <div class="education-card">
+          <h3>Power Learn Project (PLP)</h3>
+          <p>
+            Software Engineering Programme<br /><span class="edu-status"
+              >Currently Studying</span
+            >
+          </p>
+        </div>
 
+        <div class="education-card">
+          <h3>Kabare Girls’ High School</h3>
+          <p>KCSE, 2023<br /><span class="edu-status">Completed</span></p>
+        </div>
+      </div>
+    </section>
 
-      <!-- 
-        - #BLOG
-      -->
+    <!-- ✅ Interests Section -->
+    <section class="interests-section" id="interests">
+      <h2 class="section-title">Interests</h2>
+      <div class="interests-grid">
+        <div class="interest-card">
+          <span class="icon">💻</span>
+          <h3>Web Development</h3>
+          <p>
+            I enjoy creating intuitive and responsive websites that solve real
+            problems.
+          </p>
+        </div>
+        <div class="interest-card">
+          <span class="icon">🎮</span>
+          <h3>Gaming</h3>
+          <p>
+            I enjoy exploring different game genres, solving in-game puzzles,
+            and appreciating great storytelling and mechanics.
+          </p>
+        </div>
 
-<!--      <section class="section blog" id="blog">-->
-<!--        <div class="container">-->
+        <div class="interest-card">
+          <span class="icon">🐾</span>
+          <h3>Wildlife & Nature</h3>
+          <p>
+            Spending time in nature, watching birds, and appreciating natural
+            beauty inspires my creativity.
+          </p>
+        </div>
+        <div class="interest-card">
+          <span class="icon">🎨</span>
+          <h3>UI/UX Design</h3>
+          <p>
+            I’m passionate about creating clean interfaces and enjoyable user
+            experiences.
+          </p>
+        </div>
+      </div>
+    </section>
 
-<!--          <p class="section-subtitle">Latest News</p>-->
-
-<!--          <h2 class="h2 section-title">Checkout My Recent Blogs</h2>-->
-
-<!--          <p class="section-text">-->
-<!--            Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehen derit in voluptate-->
-<!--          </p>-->
-
-<!--          <ul class="blog-list">-->
-
-<!--            <li>-->
-<!--              <div class="blog-card">-->
-
-<!--                <figure class="card-banner">-->
-<!--                  <a href="#">-->
-<!--                    <img src="./assets/images/blog-1.jpg" width="1181" height="843" loading="lazy"-->
-<!--                      alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">-->
-<!--                  </a>-->
-<!--                </figure>-->
-
-<!--                <a href="#" class="card-tag">Web Development</a>-->
-
-<!--                <h3 class="card-title">-->
-<!--                  <a href="#">Jim Morisson Says when the musics over turn off the light</a>-->
-<!--                </h3>-->
-
-<!--              </div>-->
-<!--            </li>-->
-
-<!--            <li>-->
-<!--              <div class="blog-card">-->
-
-<!--                <figure class="card-banner">-->
-<!--                  <a href="#">-->
-<!--                    <img src="./assets/images/blog-2.jpg" width="1181" height="843" loading="lazy"-->
-<!--                      alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">-->
-<!--                  </a>-->
-<!--                </figure>-->
-
-<!--                <a href="#" class="card-tag">Web Development</a>-->
-
-<!--                <h3 class="card-title">-->
-<!--                  <a href="#">Jim Morisson Says when the musics over turn off the light</a>-->
-<!--                </h3>-->
-
-<!--              </div>-->
-<!--            </li>-->
-
-<!--            <li>-->
-<!--              <div class="blog-card">-->
-
-<!--                <figure class="card-banner">-->
-<!--                  <a href="#">-->
-<!--                    <img src="./assets/images/blog-3.jpg" width="1181" height="843" loading="lazy"-->
-<!--                      alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">-->
-<!--                  </a>-->
-<!--                </figure>-->
-
-<!--                <a href="#" class="card-tag">Web Development</a>-->
-
-<!--                <h3 class="card-title">-->
-<!--                  <a href="#">Jim Morisson Says when the musics over turn off the light</a>-->
-<!--                </h3>-->
-
-<!--              </div>-->
-<!--            </li>-->
-
-<!--          </ul>-->
-
-<!--        </div>-->
-<!--      </section>-->
-
-    </article>
-  </main>
-
-
-
-
-
-  <!-- 
-    - #FOOTER
-  -->
-
-  <footer class="footer">
-    <div class="container">
-
-      <p class="copyright">
-         ; 2024 <a href="#" class="copyright-link">codewithme</a>. All Rights Reseverd
+    <!-- ✅ Contact Section -->
+    <section class="contact-section" id="contact">
+      <h2 class="section-title">Contact Me</h2>
+      <p class="contact-text">
+        Feel free to reach out for collaboration, questions, or just to say hi!
       </p>
 
-      <ul class="footer-list">
-        <li>
-          <a href="#" class="footer-link">Terms & Condition</a>
-        </li>
+      <form
+        action="mailto:your-email@example.com"
+        method="post"
+        enctype="text/plain"
+        class="contact-form"
+      >
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          rows="5"
+          required
+        ></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
 
-        <li>
-          <a href="#" class="footer-link">Privacy Policy</a>
-        </li>
-      </ul>
+    <!-- ✅ Footer -->
+    <footer class="site-footer">
+      <p>&copy; 2025 Natasha Wambui Hinga. All rights reserved.</p>
 
-    </div>
-  </footer>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#interests">Interests</a>
+        <a href="#contact">Contact</a>
+      </div>
 
+      <div class="social-icons">
+        <a
+          href="https://www.linkedin.com/in/natasha-hinga-a2b268337/"
+          target="_blank"
+        >
+          LinkedIn
+        </a>
+        <a href="https://github.com/slate299" target="_blank"> GitHub </a>
+      </div>
+    </footer>
 
-
-
-
-  <!-- 
-    - #BACK TO TOP
-  -->
-
-  <a href="#top" class="back-to-top" data-back-to-top>BACK TOP</a>
-
-
-
-
-
-  <!-- 
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!-- 
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+    <!-- ✅ Back to Top Button -->
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </body>
 </html>
