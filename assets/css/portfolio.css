@@ -113,6 +113,7 @@ header {
 
 /* ===== Hero Section ===== */
 .hero {
+  padding-top: 4.5rem;
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../images/hero-bg.jpg") center/cover no-repeat;
